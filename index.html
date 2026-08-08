@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1HP Bloxd — Texture Packs</title>
+<style>
+  :root {
+    --neon: #35d5ff;
+    --bg-dark: #05070d;
+    --card-bg: #0d1420;
+    --text: #eaf6ff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: radial-gradient(circle at 50% 20%, #0c1a2e 0%, #05070d 70%);
+    color: var(--text);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header {
+    width: 100%;
+    text-align: center;
+    padding: 32px 16px 8px;
+  }
+  header h1 {
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    color: var(--neon);
+    text-shadow: 0 0 12px rgba(53, 213, 255, 0.6);
+  }
+  header p {
+    margin-top: 8px;
+    color: #9fb3c8;
+    font-size: 0.95rem;
+  }
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    padding: 40px 24px;
+    max-width: 1100px;
+  }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid rgba(53, 213, 255, 0.25);
+    border-radius: 14px;
+    width: 220px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none;
+    color: inherit;
+  }
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 22px rgba(53, 213, 255, 0.35);
+    border-color: var(--neon);
+  }
+  .card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+  }
+  .card-body {
+    padding: 14px 10px 18px;
+  }
+  .card-body h3 {
+    font-size: 1.1rem;
+    color: var(--neon);
+    text-shadow: 0 0 8px rgba(53, 213, 255, 0.5);
+  }
+  .card-body span {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.8rem;
+    color: #7f92a6;
+  }
+  .download-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 18px;
+    background: var(--neon);
+    color: #05070d;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+  }
+  .download-btn:hover {
+    background: #6fe3ff;
+  }
+  footer {
+    padding: 24px;
+    text-align: center;
+    color: #7f92a6;
+    font-size: 0.85rem;
+  }
+  footer a {
+    color: var(--neon);
+    text-decoration: none;
+    margin: 0 8px;
+  }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>1HP Bloxd — Texture Packs</h1>
+    <p>Custom texture packs for Bloxd.io — made by 1HPBloxd</p>
+  </header>
+
+  <div class="grid">
+
+    <!-- Карточка пака №1 — замени картинку, название и ссылку -->
+    <a class="card" href="#">
+      <img src="midnightpreview.png" alt="Midnight Pack preview">
+      <div class="card-body">
+        <h3>Midnight Pack</h3>
+        <span>Last update: 4th August</span>
+        <a class="download-btn" href="midnight-pack.zip" download>Download</a>
+      </div>
+    </a>
+
+    <!-- Скопируй этот блок <a class="card">...</a>, чтобы добавить ещё паки в будущем -->
+
+  </div>
+
+  <footer>
+    <a href="https://youtube.com/@1HPBloxd" target="_blank">YouTube</a>
+    |
+    <a href="https://bloxd.io/" target="_blank">play bloxd</a>
+  </footer>
+
+</body>
+</html>
